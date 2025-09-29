@@ -36,3 +36,26 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/* Navbar Styles */
+body .navbar {
+ background-color: var(--color-primary-dark);
+ font-family: var(--font-body);
+ font-size: 20px;
+ font-weight: bold;
+ color: var(--color-text-primary);
+ text-transform: uppercase;
+}
+
+
+
+/* Header*/
+
+body p {
+  line-height: 1.6;
+  margin-bottom: 1em;
+  color: var(--color-accent-gold);
+  font-family: var(--font-special);
+}
+
+
