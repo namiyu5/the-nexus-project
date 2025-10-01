@@ -208,7 +208,7 @@ top: 0;
 }
 
 #information {
-  background: url(../images/pleidas.2.webp) no-repeat center center/cover;
+  background-color: var(--color-primary-dark);
   font-family: var(--font-body);
 }
 
