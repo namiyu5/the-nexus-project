@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta Tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A brief description of the page" />
-    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta
+      name="description"
+      content="The Nexus Project is a community-driven initiative focused on inclusion, diversity, equity, and belonging."
+    />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript, community, inclusion, diversity, equity, belonging, constellations, "
+    />
     <meta name="author" content="Iman Ahmed" />
 
     <!-- Favicon -->
@@ -32,7 +39,7 @@
     <!-- Header Section -->
     <header id="header" class="section">
       <!-- navbar -->
-      <nav id="navbar" class="navbar navbar-expand-lg" data-bs-theme="dark">
+      <nav id="navbar" class="navbar navbar-expand-lg  fixed-top navbar-custom justify-content-center" data-bs-theme="dark">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img
@@ -61,10 +68,12 @@
           >
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html#home">Home</a>
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.html#mission">About</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Resources</a>
@@ -86,7 +95,7 @@
         />
         <div class="row">
           <div class="col-12 col-xl-6 text-center text-xl-start">
-            <h1>The Nexus Project</h1>
+            <h1 id="home">The Nexus Project</h1>
             <p class="col text-start">
               FOR THE COMMUNITY,<br />
               BY THE COMMUNITY.
@@ -101,80 +110,260 @@
     </header>
 
     <!-- Main Content -->
-    <main>
-       <!-- Background Image- World Map -->
-        <img src="assets/images/world map with stars.png" alt="World map" class="img-world" />
-
-        <!-- Mission Statement -->
+    <main id="about">
+      <!-- Mission Statement -->
       <div class="container my-5">
         <div class="row">
           <div class="col-12 text-center Mission">
-            <h2>Our Mission</h2>
+            <h2>🌟 Who We Are</h2>
             <p>
-              Every star tells its own story, but constellations only appear
-              when the stars connect. The Nexus Project is about making those
-              connections between people in our communities — across differences
-              of background, culture, or experience. We’re here to notice the
-              gaps, name them, and learn how they affect real lives. By linking
-              our stories and voices together, we create a constellation of
-              belonging where diversity shines and inclusion becomes the pattern
-              that guides us forward.
+              We’re not an institution or a brand. We’re neighbors, students,
+              teachers, parents, and friends — people who believe that no one
+              should feel left out. The Nexus Project was born from the idea
+              that communities thrive when every person is part of the pattern.
+              We’re here to connect those scattered lights into something
+              brighter, together and get rid of the gaps that disconnect us.
             </p>
-</div>
+            <hr />
+            <h2>🌌 Our Mission</h2>
+            <p>
+              Our mission is to reignite the sense of community by closing the
+              gaps of understanding, equity, and belonging. We use diversity and
+              inclusion as guiding stars — teaching, sharing, and connecting
+              people so that no one is left outside the constellation.
+            </p>
+
             <!-- Call to Action Button -->
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-              <button type="button" class="btn btn-primary btn-lg px-4 gap-3">
+              <button
+                type="button"
+                class="btn btn-primary btn-lg px-4 gap-3"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
                 Join Us
-              </button> 
-            </div>
-            <hr>
+              </button>
 
-     <!--Cards Section-->       
-<div class="about container justify-content-center my-5">
-    <div class="row">
-        <div class="col-xl-4 col-md-6 col-sm-12 mb-4">
-            <div class="card" style="width: 17rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                    <a href="#" class="btn btn-warning">Go somewhere</a>
+              <!-- Modal for call to action button-->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title fs-5" id="exampleModalLabel">
+                        Modal title
+                      </h4>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Modal body content goes here.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
-        <div class="col-xl-4 col-md-6 col-sm-12 mb-4">
-            <div class="card" style="width: 17rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+            <hr />
+
+            <!--Cards Section-->
+            <div class="about my-5">
+              <div class="row justify-content-center">
+                <h2 class="card-header display-4">Our Core Pillars</h2>
+                <div
+                  class="col-xl-3 col-md-6 col-sm-12 mb-4 d-flex justify-content-center"
+                >
+                  <div class="card" style="width: 17rem">
+                    <img
+                      src="assets/images/light-bulb.png"
+                      class="card-img-top"
+                      alt="graphic of a light bulb"
+                    />
+                    <div class="card-body">
+                      <h3 class="card-title display-6">Awareness</h3>
+                      <p class="card-text lead">
+                        Shining a light on the hidden gaps that affect our
+                        communities.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-            </div>
-        </div>
-        <div class="col-xl-4 col-md-6 col-sm-12 mb-4">
-            <div class="card" style="width: 17rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                    <a href="#home" class="btn btn-warning">Go somewhere</a>
+                <div
+                  class="col-xl-3 col-md-6 col-sm-12 mb-4 d-flex justify-content-center"
+                >
+                  <div class="card" style="width: 17rem">
+                    <img
+                      src="assets/images/book.png"
+                      class="card-img-top"
+                      alt="graphic of a book"
+                    />
+                    <div class="card-body">
+                      <h3 class="card-title display-6">Education</h3>
+                      <p class="card-text lead">
+                        Offering simple, accessible learning that sparks
+                        understanding.
+                      </p>
+                    </div>
+                  </div>
                 </div>
+                <div
+                  class="col-xl-3 col-md-6 col-sm-12 mb-4 d-flex justify-content-center"
+                >
+                  <div class="card" style="width: 17rem">
+                    <img
+                      src="assets/images/speech.png"
+                      class="card-img-top"
+                      alt="graphic of a speech bubble"
+                    />
+                    <div class="card-body">
+                      <h3 class="card-title display-6">Dialogue</h3>
+                      <p class="card-text lead">
+                        Creating safe spaces for honest conversations and shared
+                        stories.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-xl-3 col-md-6 col-sm-12 mb-4 d-flex justify-content-center"
+                >
+                  <div class="card" style="width: 17rem">
+                    <img
+                      src="assets/images/arrow.png"
+                      class="card-img-top"
+                      alt="graphic of an arrow"
+                    />
+                    <div class="card-body">
+                      <h3 class="card-title display-6">Action</h3>
+                      <p class="card-text lead">
+                        Taking steps to create tangible change in our
+                        communities.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-       
-    </div>
-</div>
-           
-
-
-</div>
-</div>
-
-
-    
-     
+      </div>
     </main>
+    <!-- Information Section with Carousel -->
+    <section id="information">
+      <div class="container my-5">
+        <div class="row">
+          <div class="col">
+            <h2 class="mb-4 text-center">What Everyone Should Know About Inclusion, Diversity, Equity, and Belonging</h2>
+            <!-- Card Carousel -->
+            <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                  <div class="d-flex justify-content-center">
+                    <div class="card">
+                      <img src="assets/images/inclusion.jpg" class="card-img-top" alt="Community gathering with diverse people engaging">
+                      <div class="card-body">
+                        <h5 class="card-title">Understanding Inclusion</h5>
+                        <p class="card-text">
+                          Inclusion isn’t just being invited — it’s being actively welcomed, heard, and involved. In our community, that means creating spaces where everyone, especially marginalized voices, can lead and belong.
+                        </p>
+                        <a href="https://inclusionhub.com/articles/what-is-inclusion" target="_blank" class="btn btn-warning">Learn More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <div class="card">
+                      <img src="assets/images/diversity.jpg" class="card-img-top" alt="Faces of people from various cultures and backgrounds">
+                      <div class="card-body">
+                        <h5 class="card-title">Embracing Diversity</h5>
+                        <p class="card-text">
+                          Diversity reflects the rich variety of identities in our community — race, gender, ability, language, culture, and more. Celebrating it means moving beyond tolerance to appreciation and representation.
+                        </p>
+                        <a href="https://www.racialequitytools.org/resourcefiles/mcintosh.pdf" target="_blank" class="btn btn-warning">Learn More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <div class="card">
+                      <img src="assets/images/equity.jpg" class="card-img-top" alt="Graphic showing equity vs equality with different height boxes">
+                      <div class="card-body">
+                        <h5 class="card-title">Equity Over Equality</h5>
+                        <p class="card-text">
+                          Equity ensures that everyone has what they need to succeed — not just the same resources. For our neighborhoods, that means targeted support for historically excluded groups.
+                        </p>
+                        <a href="https://www.naceweb.org/diversity-equity-and-inclusion/best-practices/equity-vs-equality-what-s-the-difference/" target="_blank" class="btn btn-warning">Learn More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <div class="card">
+                      <img src="assets/images/belonging.jpg" class="card-img-top" alt="Neighbors sitting together and sharing stories">
+                      <div class="card-body">
+                        <h5 class="card-title">Building Belonging in Our Community</h5>
+                        <p class="card-text">
+                          Belonging happens when people don’t just fit in — they thrive as their authentic selves. Locally, this means listening deeply, amplifying community voices, and dismantling barriers to participation.
+                        </p>
+                        <a href="https://belonging.berkeley.edu/" target="_blank" class="btn btn-warning">Learn More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <!-- Controls -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+              <!-- Indicators -->
+              <div class="carousel-indicators mt-3">
+                <button type="button" data-bs-target="#cardCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#cardCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#cardCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#cardCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer>Footer</footer>
