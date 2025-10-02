@@ -286,17 +286,29 @@ top: 0;
  
 }
 
-#tipsTestimonialsAccordion{
-  background-color: transparent;
-  border: none;
-  box-shadow: none;
-}
+
 
 .accordion-body {
   background-color: transparent;
   border: none;
   box-shadow: none;
 }
+#tips .mb-4 {
+  font-family: var(--font-heading);
+  color: transparent;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 50px;
+  text-decoration: underline;
+  background: linear-gradient(90deg, var(--color-accent-gold), var(--color-primary-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* Gradient underline using box-shadow and border-image */
+  text-decoration: none;
+  position: relative;
+}
+
 
 .list-group-item {
   background-color: transparent;
@@ -310,7 +322,21 @@ top: 0;
   border: 0px;
 }
 
-
+#testimonials .mb-4 {
+  font-family: var(--font-heading);
+  color: transparent;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 50px;
+  text-decoration: underline;
+  background: linear-gradient(90deg, var(--color-accent-gold), var(--color-primary-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* Gradient underline using box-shadow and border-image */
+  text-decoration: none;
+  position: relative;
+}
 
 #Contact{
   background-image: url('../images/stars.png');
