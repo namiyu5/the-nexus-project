@@ -110,9 +110,9 @@
             </p>
 
             <!-- Hero Call to Action Button -->
-            <button type="button" class="btn btn-warning">
-              Explore the constellations!
-            </button>
+            <a href="#about" class="btn btn-warning">
+              Start Your Journey!
+            </a>
           </div>
         </div>
       </div>
@@ -156,52 +156,74 @@
             <!-- Call to Action Button -->
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
               <button
-                type="button"
-                class="btn btn-primary btn-lg px-4 gap-3"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
+              type="button"
+              class="btn btn-primary btn-lg px-4 gap-3"
+              data-bs-toggle="modal"
+              data-bs-target="#joinUsModal"
               >
-                Join Us
+              Join Us
               </button>
 
               <!-- Modal for call to action button-->
               <div
-                class="modal fade"
-                id="exampleModal"
-                tabindex="-1"
-                aria-labelledby="exampleModalLabel"
-                aria-hidden="true"
+              class="modal fade"
+              id="joinUsModal"
+              tabindex="-1"
+              aria-labelledby="joinUsModalLabel"
+              aria-hidden="true"
               >
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h4 class="modal-title fs-5" id="exampleModalLabel">
-                        Modal title
-                      </h4>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-                    <div class="modal-body">
-                      <p>Modal body content goes here.</p>
-                    </div>
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                      >
-                        Close
-                      </button>
-                      <button type="button" class="btn btn-primary">
-                        Save changes
-                      </button>
-                    </div>
-                  </div>
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content rounded-4 shadow-lg">
+                <div class="modal-header bg-primary text-white rounded-top-4">
+                  <h4 class="modal-title fs-5" id="joinUsModalLabel">
+                  Become Part of The Nexus Project
+                  </h4>
+                  <button
+                  type="button"
+                  class="btn-close btn-close-white"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  ></button>
                 </div>
+                <div class="modal-body">
+                  <p class="lead mb-3">
+                  Ready to make a difference? Join our community to receive updates, event invites, and resources on inclusion, diversity, equity, and belonging.
+                  </p>
+                  <form id="joinUsForm">
+                  <div class="mb-3">
+                    <label for="joinName" class="form-label">Name</label>
+                    <input type="text" class="form-control rounded-3" id="joinName" placeholder="Your Name" required autocomplete="name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="joinEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control rounded-3" id="joinEmail" placeholder="you@email.com" required autocomplete="email">
+                  </div>
+                  <div class="mb-3">
+                    <label for="joinInterest" class="form-label">How would you like to get involved?</label>
+                    <select class="form-select rounded-3" id="joinInterest" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option>Attend Events</option>
+                    <option>Volunteer</option>
+                    <option>Share My Story</option>
+                    <option>Receive Newsletter</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="joinMessage" class="form-label">Message (optional)</label>
+                    <textarea class="form-control rounded-3" id="joinMessage" rows="2" placeholder="Tell us more..."></textarea>
+                  </div>
+                  <div class="form-text mb-2 text-muted">
+                    We respect your privacy. Your information will only be used for Nexus Project communications.
+                  </div>
+                  <div class="d-grid">
+                    <button type="submit" class="btn btn-warning btn-lg rounded-3">
+                    Join Now
+                    </button>
+                  </div>
+                  </form>
+                </div>
+                </div>
+              </div>
               </div>
             </div>
             <hr>
