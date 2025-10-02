@@ -322,7 +322,11 @@ top: 0;
   border: 0px;
 }
 
-#testimonials .mb-4 {
+#testimonials {
+  background-image: url('../images/stars.png');
+}
+
+#testimonials .mb-5 {
   font-family: var(--font-heading);
   color: transparent;
   font-size: 2.5rem;
@@ -339,7 +343,7 @@ top: 0;
 }
 
 #Contact{
-  background-image: url('../images/stars.png');
+ 
   font-family: var(--font-body);
   padding-bottom: 3rem;
 }
@@ -388,7 +392,7 @@ top: 0;
   padding: 10px 10px;
   padding-bottom: 3px;
   padding-top: 3px;
-  background-color:var(--color-primary-light);
+  background-color:var(--color-accent-gold);
   color: var(--color-primary-dark);
 }
 
