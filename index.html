@@ -87,7 +87,7 @@
                 <a class="nav-link" href="#testimonials">Testimonials</a>
               </li>
                <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact us</a>
+                <a class="nav-link" href="#Contact">Contact us</a>
                </li>
             </ul>
           </div>
@@ -111,7 +111,7 @@
 
             <!-- Hero Call to Action Button -->
             <button type="button" class="btn btn-warning">
-              !
+              Explore the constellations!
             </button>
           </div>
         </div>
@@ -406,23 +406,29 @@
       </div>
     </section>
 
-    <!-- Tips Section --> 
+    <!-- Tips & Testimonials Accordion Section -->
+
+    <!-- Tips Section -->
     <section id="tips">
       <div class="container my-5">
-        <div class="row">
-          <div class="col text-center">
-            <h2 class="mb-4">Everyday Ways to Build Belonging</h2>
-            <button class="btn btn-outline-primary mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#tipsList" aria-expanded="false" aria-controls="tipsList">
-              Show Tips <i class="fa-solid fa-circle-chevron-down"></i>
-            </button>
-            <div class="collapse" id="tipsList">
-              <ul class="list-group">
-                <li class="list-group-item">1. <strong>Listen Actively:</strong> Create spaces where everyone feels safe to share their experiences without judgment.</li>
-                <li class="list-group-item">2. <strong>Educate Yourself:</strong> Take the initiative to learn about different cultures, identities, and experiences.</li>
-                <li class="list-group-item">3. <strong>Foster Open Dialogue:</strong> Encourage conversations about diversity and inclusion, and be open to feedback.</li>
-                <li class="list-group-item">4. <strong>Be Mindful of Language:</strong> Use inclusive language that respects all identities and experiences.</li>
-                <li class="list-group-item">5. <strong>Advocate for Others:</strong> Use your voice to support marginalized individuals and communities.</li>
-              </ul>
+        <h2 class="mb-4 text-center">Everyday Ways to Build Belonging</h2>
+        <div class="accordion" id="tipsAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTips">
+              <button class="accordion-button display-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTips" aria-expanded="true" aria-controls="collapseTips">
+                Tips
+              </button>
+            </h2>
+            <div id="collapseTips" class="accordion-collapse collapse show" aria-labelledby="headingTips" data-bs-parent="#tipsAccordion">
+              <div class="accordion-body">
+                <ul class="list-group">
+                  <li class="list-group-item">1. <strong>Listen Actively:</strong> Create spaces where everyone feels safe to share their experiences without judgment.</li>
+                  <li class="list-group-item">2. <strong>Educate Yourself:</strong> Take the initiative to learn about different cultures, identities, and experiences.</li>
+                  <li class="list-group-item">3. <strong>Foster Open Dialogue:</strong> Encourage conversations about diversity and inclusion, and be open to feedback.</li>
+                  <li class="list-group-item">4. <strong>Be Mindful of Language:</strong> Use inclusive language that respects all identities and experiences.</li>
+                  <li class="list-group-item">5. <strong>Advocate for Others:</strong> Use your voice to support marginalized individuals and communities.</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -430,112 +436,127 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section>
+    <section id="testimonials">
       <div class="container my-5">
-        <div class="row">
-          <div class="col">
-            <h2 class="mb-4">Testimonials</h2>
-            <button class="btn btn-outline-primary mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#testimonialsList" aria-expanded="false" aria-controls="testimonialsList">
-              Show Testimonials <i class="fa-solid fa-circle-chevron-down"></i>
-            </button>
-            <div class="collapse" id="testimonialsList">
-              <div class="testimonial mb-4">
-                <p class="lead">
-                  "The Nexus Project has transformed our community. Through their
-                  initiatives, we've seen a remarkable increase in understanding
-                  and collaboration among diverse groups."
-                </p>
-                <p class="text-end">- Alex Johnson, Community Leader</p>
-              </div>
-              <div class="testimonial mb-4">
-                <p class="lead">
-                  "Participating in The Nexus Project's programs has been a
-                  life-changing experience. I've learned so much about inclusion
-                  and equity, and I feel more connected to my community than ever
-                  before."
-                </p>
-                <p class="text-end">- Maria Rodriguez, Program Participant</p>
-              </div>
-              <div class="testimonial mb-4">
-                <p class="lead">
-                  "The resources and support provided by The Nexus Project have
-                  empowered me to become an advocate for diversity and inclusion in
-                  my workplace. Their impact is truly inspiring."
-                </p>
-                <p class="text-end">- David Lee, Workplace Advocate</p>
-              </div>
-              <div class="testimonial mb-4">
-                <p class="lead">
-                  "The Nexus Project's focus on belonging has created a sense of
-                  unity in our neighborhood. People from all walks of life now
-                  feel valued and included."
-                </p>
-                <p class="text-end">- Sarah Thompson, Neighborhood Resident</p>
-              </div>
-            </div>
-          </div>
-        </div>
+      <h2 class="mb-4 text-center">Testimonials</h2>
+      <div class="testimonial mb-4">
+        <p class="lead">
+        "The Nexus Project has transformed our community. Through their
+        initiatives, we've seen a remarkable increase in understanding
+        and collaboration among diverse groups."
+        </p>
+        <p class="text-end">- Alex Johnson, Community Leader</p>
+      </div>
+      <div class="testimonial mb-4">
+        <p class="lead">
+        "Participating in The Nexus Project's programs has been a
+        life-changing experience. I've learned so much about inclusion
+        and equity, and I feel more connected to my community than ever
+        before."
+        </p>
+        <p class="text-end">- Maria Rodriguez, Program Participant</p>
+      </div>
+      <div class="testimonial mb-4">
+        <p class="lead">
+        "The resources and support provided by The Nexus Project have
+        empowered me to become an advocate for diversity and inclusion in
+        my workplace. Their impact is truly inspiring."
+        </p>
+        <p class="text-end">- David Lee, Workplace Advocate</p>
+      </div>
+      <div class="testimonial mb-4">
+        <p class="lead">
+        "The Nexus Project's focus on belonging has created a sense of
+        unity in our neighborhood. People from all walks of life now
+        feel valued and included."
+        </p>
+        <p class="text-end">- Sarah Thompson, Neighborhood Resident</p>
+      </div>
       </div>
     </section>
 
     <!-- Contact Section -->
-<section>
+<section id="Contact">
   <div class="container my-5">
-    <div class="row">
-      <div class="col">
-        <h2 class="mb-4">Contact us</h2>
-        <form>
-          <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
-          </div>
-        </form>
-      </div>
+    <div class="row justify-content-center">
+      <h2 class="mb-4 text-center">Contact Us</h2>
+      <form class="row g-4 justify-content-center">
+        <div class="col-md-4">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Full Name" required autocomplete="name">
+        </div>
+        <div class="col-md-4">
+          <label for="phone" class="form-label">Phone</label>
+          <input type="text" class="form-control" id="phone" placeholder="Your Phone Number" required autocomplete="tel">
+        </div>
+        <div class="col-md-4">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="Your Email" required autocomplete="email">
+        </div>
+        <div class="col-12">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-primary px-5">Send Message</button>
+        </div>
+      </form>
     </div>
   </div>
 </section>
 
 
 <!-- Footer -->
-<footer class="text-center bg-dark text-light py-4 mt-auto">
+ <section id="footer" class="bg-dark">
+ <footer>
   <div class="container">
-    <!-- Social Media Section -->
-    <section class="mb-4 social-media">
-      <a href="https://www.facebook.com" target="_blank" aria-label="Facebook" class="mx-2 text-light fs-4">
-        <i class="fa-brands fa-facebook"></i>
-      </a>
-      <a href="https://twitter.com" target="_blank" aria-label="Twitter" class="mx-2 text-light fs-4">
-        <i class="fa-brands fa-twitter"></i>
-      </a>
-      <a href="https://www.instagram.com" target="_blank" aria-label="Instagram" class="mx-2 text-light fs-4">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
-      <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn" class="mx-2 text-light fs-4">
-        <i class="fa-brands fa-linkedin"></i>
-      </a>
-    </section>
-    <!-- Newsletter Signup -->
-    <div class="row justify-content-center align-items-center mb-3">
-      <div class="col-auto">
-        <p class="mb-0 fw-semibold">Sign up for our newsletter</p>
+    <div class="row">
+      <!-- Newsletter Signup -->
+      <div class="col-12">
+        <h6 class="newsletter-title">Sign up for our newsletter</h6>
+        <form class="row g-2">
+          <div class="col-4">
+            <input type="name" class="form-control" id="newsletterName" placeholder="Enter your name" required autocomplete="name">
+          </div>
+          <div class="col-4">
+            <input type="email" class="form-control" id="newsletterEmail" placeholder="Enter your email" required autocomplete="email">
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </div>
+        </form>
       </div>
-      <div class="col-md-5 col-12 my-2 my-md-0">
-        <input type="email" id="newsletterEmail" class="form-control" placeholder="Email address" aria-label="Email address">
+
+      <!-- Social Media Icons -->
+      <div class="col-3">
+        <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+          <i class="fa-brands fa-facebook social-icon"></i>
+        </a>
       </div>
-      <div class="col-auto">
-        <button type="button" class="btn btn-warning px-4">Subscribe</button>
+      <div class="col-3">
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+          <i class="fa-brands fa-twitter social-icon"></i>
+        </a>
       </div>
-    </div>
-    <!-- Copyright -->
-    <div class="text-center small mt-3">
-      © 2025 The Nexus Project. All rights reserved.
+      <div class="col-3">
+        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+          <i class="fa-brands fa-instagram social-icon"></i>
+        </a>
+      </div>
+      <div class="col-3">
+        <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin social-icon"></i>
+        </a>
+      </div>
+      
+      <div class="col-12 text-center text-white">
+        <p class="mb-0">&copy; 2024 The Nexus Project. All rights reserved.</p>
+        <p class="mb-0">Made with ❤️ by The Nexus Team</p>
+      </div>
     </div>
   </div>
-</footer>
+</footer>   
+</section>
 
     <!-- Bootstrap Bundle JS -->
     <script
